@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="./public/output.css">
+    <title>Frontend Mentor | [Blogr]</title>
+</head>
+<body>
+   <!--Navbar-->
+   <header class="bg-Lightred bg-hero md:bg-desktop bg-cover bg-no-repeat bg-fixed bg-center rounded-bl-large ">
+    <div class="container mx-auto ">
+        <nav class="py-4 lg:py-10 ml-3 md:ml-0 lg:px-20 text-white1 flex items-center justify-between">
+            <div class="main flex items-center">
+                <div class="flex items-center justify-between">
+                        <h1 class=" font-Ubuntu font-bold text-5xl md:text-7xl lg:mr-10 ">Blogr</h1>
+                        <div class="text-6xl ml-48 md:ml-2 mt-4 cursor-pointer lg:hidden block">
+                        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                    </div>
+                </div>
+                <div class="menu">
+                    <ul class="lg:flex text-xl mt-5 lg:mt-0 items-center z-[1] lg:z-auto lg:static absolute w-full left-0 lg:w-auto lg:py-0 py-4 pl-3 lg:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 bg-Lightred lg:bg-opacity-0">
+                        <li class="mx-5 text-2xl my-3 md:my-0"><a href="/">Product<ion-icon class="text-lg mx-2" name="chevron-down-outline"></ion-icon></a></li>
+                        <li class="mx-5 text-2xl my-3 md:my-0"><a href="/">Company<ion-icon class="text-lg mx-2"  name="chevron-down-outline"></ion-icon></a></li>
+                        <li class="mx-5 text-2xl my-3 md:my-0"><a href="/">Connect<ion-icon class="text-lg mx-2"  name="chevron-down-outline"></ion-icon></a></li>
+                        <button class="mx-5 text-2xl md:ml-28 my-3 md:my-0">Login</button>
+                        <button class="md:mx-5 text-2xl my-3 bg-white border-2 text-Lightred1 py-2 px-7 rounded-full md:my-0 block w-full md:w-fit ">Sign Up</button>
+                        </ul>
+                </div>
+            
+          </div>
+           
+        </nav>
+
+        <div class="main-header text-white1 mt-20 text-center mb-10 mx-5 md:mx-0">
+            <h1 class="text-4xl font-bold md:text-6xl font-Ubuntu mb-5">A modern publishing platform</h1>
+            <p class="font-Ubuntu text-2xl opacity-50">Grow your audience and build your online brand</p>
+        </div>
+
+        <div class="btn text-center font-Ubuntu pb-40 flex md:block mx-7 md:mx-0">
+            <button class="text-lg md:text-2xl bg-white border-2 text-Lightred1 py-3 px-5  md:py-3 md:px-5 rounded-full font-bold">Start for Free</button>
+                <button class="md:mx-5 ml-3 md:ml-0 text-lg md:text-2xl bg-Lightred border-2 text-white1 py-2 px-6  md:py-3 md:px-5 rounded-full font-bold">Learn More</button>
+        </div>
+    </div>
+   </header>
+
+   <section>
+    <div class="container mx-auto mt-20 mb-1">
+        <div class="section1 ">
+            <h2 class="text-center font-Ubuntu text-center text-2xl md:text-4xl md:ml-28 font-bold mb-10 md:-mb-7 ">Designed for the future</h2>
+            <div class="grid md:grid-cols-6 mx-10 md
+            :mx-20 md:gap-20 items-start font-Ubuntu">
+                <div class="left-col row-span-3 md:col-span-3 md:mt-14 order-2 md:order-1 text-center md:text-left">
+                    <div class="text mt-24 md:ml-28">
+                    <h3 class="text-3xl font-medium mb-9 ">Introducing an extensible editor</h3>
+                    <p class="opacity-50 text-xl mb-10">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p>
+                    <h3 class="text-3xl font-medium mb-9">Robust content management</h3>
+                    <p class="opacity-50 text-xl mb-10">Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+                    </div>
+                </div>
+                <div class=" md:col-span-3 md:-mr-64 order-1 md:order-2">
+                    <img class="w-full md:hidden" src="./images/illustration-editor-mobile.svg" alt="">
+                    <img class="w-full hidden md:block" src="./images/illustration-editor-desktop.svg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+   </section>
+   
+   <section class="bg-Verydarkdesaturatedblue rounded-bl-large pb-5 bg-rounded bg-no-repeat bg-left-top rounded-tr-large">
+    <div class="container mx-auto md:mt-0 mt-32">
+        <div class="section2 grid md:grid-cols-3 items-center md:mx-28 mx-5">
+            <div class="img flex col-span-2 gap-7">
+                <div>
+                    <img class="md:w-56 w-36 -mt-28 md:-mt-20 md:rounded-md" src="./images/ipfone.jpg" alt="">
+                    <p class="-mt-44 md:-mt-64 ml-8 text-2xl md:text-6xl text-Lightred1 font-Ubuntu font-bold">Blogr</p>
+                </div>
+                <img class="md:w-56 w-36 -mt-20 md:-mt-0 mb-10 md:-mb-20 md:rounded-md" src="./images/ipfone.jpg" alt="">
+            </div>
+            <div class="text col-span-1 text-white1 font-Ubuntu mx-5 text-center md:mx-0 md:text-left pb-10 md:pb-0">
+                <h2 class=" text-4xl :text-2xl font-bold mb-5">State of the Art Infrastructure</h2>
+                <p class="text-lg">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+            </div>
+        </div>
+    </div>
+   </section>
+
+   <section>
+    <div class="container mx-auto mt-28 mb-10">
+        <div class="section3">
+            <div class="grid md:grid-cols-6 mx-10 md
+            :mx-20 md:gap-5 items-start font-Ubuntu">
+            <div class=" md:col-span-3 md:-ml-72 ">
+                <img class="w-full md:hidden" src="./images/illustration-laptop-mobile.svg" alt="">
+                <img class="w-full hidden md:block" src="./images/illustration-laptop-desktop.svg" alt="">
+            </div>
+                <div class="left-col row-span-3 md:col-span-3 md:mt-14  text-center md:text-left">
+                    <div class="text mt-24 md:ml-28">
+                    <h3 class="text-3xl font-bold mb-9 ">Free, open, simple</h3>
+                    <p class="opacity-50 text-xl mb-10">Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+                    <h3 class="text-3xl font-bold mb-9"> Powerful tooling</h3>
+                    <p class="opacity-50 text-xl mb-10">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.</p>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+   </section>
+
+   <footer class="bg-Verydarkblackblue px-28 py-2 md:py-10 text-white1 rounded-tr-large cursor-pointer">
+    <div class="container mx-auto mt-20 font-Ubuntu flex flex-col md:flex-row items-start justify-around text-center md:text-left ">
+        <h1 class=" font-bold text-7xl mb-10 ">Blogr</h1>
+        <div class="part1 ml-10 md:ml-0 md:mb-0 mb-5 ">
+            <h3 class="text-2xl mb-5 mt-5">Product</h3>
+            <p class="text-lg my-3">Overview</p>
+            <p class="text-lg my-3">Pricing</p>
+            <p class="text-lg my-3">Marketplace</p>
+            <p class="text-lg my-3">Features</p>
+            <p class="text-lg my-3">Integrations</p>
+        </div>
+        <div class="part2 ml-10 md:ml-0 md:mb-0 mb-5 ">
+            <h3 class="text-2xl mb-5 mt-5">Company</h3>
+            <p class="text-lg my-3"> About</p>
+            <p class="text-lg my-3">Team</p>
+            <p class="text-lg my-3">Blog</p>
+            <p class="text-lg my-3">Careers</p>
+        </div>
+        <div class="part3 ml-10 md:ml-0 md:mb-0 mb-5 ">
+            <h3 class="text-2xl mb-5 mt-5">Contact</h3>
+            <p class="text-lg my-3">Newsletter</p>
+            <p class="text-lg my-3">LinkedIn</p>
+        </div>
+    </div>
+   </footer>
+
+   <script>
+    function Menu(e){
+        let  list = document.querySelector('ul');
+
+        e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) : (e.name = "menu" , list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+    }
+</script>
+</body>
+</html>
